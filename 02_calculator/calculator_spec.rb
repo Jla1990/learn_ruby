@@ -77,16 +77,26 @@ end
 # once the above tests pass,
 # write tests and code for the following:
 
-describe "#multiply" do
+describe "multiply" do
 
-  it "multiplies two numbers"
+ it "multiplies two numbers" do
+   expect(multiply(10,2)).to eq(20)
+ end
 
-  it "multiplies several numbers"
+ it "multiplies several numbers" do
+   expect(multiply(2,3,4)).to eq(24)
+ end
 
 end
 
-describe "#power" do
-  it "raises one number to the power of another number"
+describe "power" do
+  it "raises one number to the power of another number" do
+    expect(power(2,3)).to eq(8)
+  end
+  it "raises one number to the power of another number" do
+    expect(power(3,3)).to eq(27)
+  end
+
 end
 
 # http://en.wikipedia.org/wiki/Factorial
