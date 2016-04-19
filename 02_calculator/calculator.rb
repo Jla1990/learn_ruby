@@ -19,5 +19,9 @@ def power(*numbers)
 end
 
 def factorial(*numbers)
-  numbers.downto(1).inject(:*)
+  if numbers > 0
+    numbers.downto(1).inject(:*)
+  else
+    return 1
+  end
 end

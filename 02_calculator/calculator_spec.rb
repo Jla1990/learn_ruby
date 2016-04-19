@@ -100,10 +100,20 @@ describe "power" do
 end
 
 # http://en.wikipedia.org/wiki/Factorial
-describe "#factorial" do
-  it "computes the factorial of 0"
-  it "computes the factorial of 1"
-  it "computes the factorial of 2"
-  it "computes the factorial of 5"
-  it "computes the factorial of 10"
+describe "factorial" do
+  it "computes the factorial of 0" do
+    expect(multiply(0)).to eq(1)
+  end
+  it "computes the factorial of 1" do
+    expect(multiply(1)).to eq(1)
+  end
+  it "computes the factorial of 2" do
+    expect(multiply(1,2)).to eq(2)
+  end
+  it "computes the factorial of 5" do
+    expect(multiply(1,2,3,4,5)).to eq(120)
+  end
+  it "computes the factorial of 10" do
+  expect(multiply(1,2,3,4,5,6,7,8,9,10)).to eq(3628800)
+  end
 end
