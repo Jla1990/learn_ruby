@@ -91,15 +91,25 @@ end
 
 describe "#power" do
   it "raises one number to the power of another number" do
-    expect (power(2)).to eq(4)
+    expect(power(2,2)).to eq(4)
   end
 end
 
 # http://en.wikipedia.org/wiki/Factorial
 describe "#factorial" do
-  it "computes the factorial of 0"
-  it "computes the factorial of 1"
-  it "computes the factorial of 2"
-  it "computes the factorial of 5"
-  it "computes the factorial of 10"
+  it "computes the factorial of 0" do
+    expect(factoral(0)).to eq(1)
+  end
+  it "computes the factorial of 1" do
+    expect(factoral(1)).to eq(1)
+  end
+  it "computes the factorial of 2" do
+    expect(factoral (2)).to eq(2)
+  end
+  it "computes the factorial of 5" do
+    expect(factoral(5)).to eq(120)
+  end
+  it "computes the factorial of 10" do
+    expect(factoral(10)).to eq(3628800)
+  end
 end
