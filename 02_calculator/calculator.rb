@@ -1,9 +1,9 @@
 def add (num1, num2)
-  num1 + num2
+  return num1 + num2
 end
 
 def subtract (num1, num2)
-  num1 - num2
+  return num1 - num2
 end
 
 array = []
@@ -19,4 +19,12 @@ end
 
 def power(*numbers)
  numbers.inject(:**)
+end
+
+def factoral (numbers)
+  if numbers == 0
+    1
+  else
+    numbers.downto(1).inject(:*)
+  end
 end
