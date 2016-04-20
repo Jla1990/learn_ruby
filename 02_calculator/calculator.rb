@@ -18,10 +18,10 @@ def power(*numbers)
   numbers.inject(:**)
 end
 
-def factorial(*numbers)
-  if numbers > 0
-    numbers.downto(1).inject(:*)
+def factorial(n)
+  if n == 0
+    1
   else
-    return 1
+    n.downto(1).inject(:*)
   end
 end
